@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Data Form</title>
+  <style>
+    body {
+      margin: 40px;
+      background-color: white;
+    }
+    h2 {
+      color: brown;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 0 10px black;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+    input, select{
+        accent-color: blue;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons input {
+      text-align: center;
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+    .reset{
+        background-color: red;
+    }
+    .submit{
+        background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>College Registration Form</h2>
+
+  <form>
+    
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="college">College Name:</label>
+    <input type="text" id="college" name="college">
+
+    
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password">
+
+    
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email">
+
+    
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male" style="display:inline;">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female" style="display:inline;">Female</label>
+    <input type="radio" id="Other" name="gender" value="Other">
+    <label for="other" style="display:inline;">Other</label>
+
+    
+    <label for="course">Select Course:</label>
+    <select id="course" name="course">
+      <option value="B.Tech">B.Tech</option>
+      <option value="B.Sc">B.Sc</option>
+      <option value="B.Com">B.Com</option>
+      <option value="BA">BA</option>
+      <option value="MCA">Masters</option>
+    </select>
+
+    
+    <label>Hobbies:</label>
+    <input type="checkbox" id="reading" name="hobbies" value="Reading">
+    <label for="reading" style="display:inline;">Reading</label><br>
+    <input type="checkbox" id="sports" name="hobbies" value="Sports">
+    <label for="sports" style="display:inline;">Sports</label><br>
+    <input type="checkbox" id="music" name="hobbies" value="Music">
+    <label for="music" style="display:inline;">Music</label><br>
+    <input type="checkbox" id="Editing" name="hobbies" value="Editing">
+    <lable for="editing" style="display:inline;">Editing</lable><br>
+
+    
+    <div class="buttons">
+      <button type="submit" class="submit" value="Submit">Submit</button>
+      <button type="reset" class="reset" value="Reset">Reset</button>
+    </div>
+  </form>
+
+</body>
+</html>
